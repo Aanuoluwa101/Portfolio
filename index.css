@@ -75,7 +75,7 @@ nav a:hover {
    font-size: 14px;
 }
 
-#hero .emphasis {
+.emphasis {
    color: #ccd6f6;
    font-weight: 700; 
 }
