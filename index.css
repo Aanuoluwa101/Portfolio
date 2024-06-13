@@ -17,7 +17,7 @@ header {
     width: 95%;
 }
 
-.logo-container {
+/* .logo-container {
     align-self: flex-start;
     margin: 0 auto;
 }
@@ -27,8 +27,7 @@ header {
     height: 280px;
     margin-right: 10px;
     border-radius: 50%; 
-    /* object-fit: cover;  */
-}
+} */
 
 
 nav ul {
@@ -328,4 +327,135 @@ footer {
     margin: 0;
     font-size: .8rem;
     text-align: center;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    #hero, #projects, #contact {
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    #hero, #projects, #contact {
+        margin: 0 2rem;
+    }
+
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .closing {
+        flex-direction: column;
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .social-media-closing,
+    .closing-text {
+        width: 100%;
+        margin: 1rem 0;
+        border-right: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* header {
+        flex-direction: column;
+        align-items: center;
+    } */
+    header {
+        justify-content: center; 
+        /* background-color: blue; */
+    }
+
+    nav ul {
+        /* flex-direction: column; */
+        gap: 10px;
+    }
+    /* nav {
+        flex: 1; 
+    } */
+    
+    nav a {
+        margin: 10px;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero p {
+        font-size: 12px;
+    }
+
+    #contact input,
+    #contact textarea {
+        width: 90%;
+    }
+
+    .social-media-closing {
+        margin: 1rem 0;
+    }
+
+    .project-image img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    #hero, #projects, #contact {
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+
+    #hero h1 {
+        font-size: 24px;
+    }
+
+    #hero p {
+        font-size: 10px;
+    }
+
+    .closing {
+        width: 100%;
+    }
+
+    .social-media-closing,
+    .closing-text {
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description {
+        font-size: 0.8rem;
+    }
+
+    .tech-stack span {
+        font-size: 0.7rem;
+    }
 }
