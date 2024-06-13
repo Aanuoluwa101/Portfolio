@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="#hero">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Hi. I'm Ayodeji Aanuoluwapo</h1>
+        <p>A <span class="emphasis" >Backend</span> and <span class="emphasis">DevOps Engineer</span>, and a devoted lover
+            of the <span class="emphasis">Linux OS</span>. 
+            I constantly fantasize about solving every imaginable problem with code and I take
+            steps to bring some of those to reality. Code and systems should be efficient, robust and maintainable, and 
+            I make sure these reflects in every project I lay my hands on. 
+            </p>
+            <p>I have had the opportunity 
+                of working with teams in building and delivering software ranging from a an <a href="http://medcarefind.com/" class="emphasis">e-health app</a>,
+                to an <a href="https://www.postabox.co/" class="emphasis">email marketing app</a>, and I look 
+                forward to more opportunities to learn and grow. 
+            </p>
+            <p>
+                When I'm not coding, I'm definitely doing music on my piano or finding ways to improve myself as a person.
+            </p>
+            <p>A short list of things I've played with</p>
+            <div class="tech-stack">
+                <span class="first-tech">Python</span>
+                <span>Flask</span>
+                <span>Django</span>
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+                <span>Redis</span>
+                <span>AWS</span>
+                <span>nginx</span>
+                <span>Docker</span>
+                <span>Jenkins</span>
+                <span>Ansible</span>
+                <span>Gitlab CI/CD</span>
+            </div>
+
+        <div id="social-media">
+            <a href="https://github.com/Aanuoluwa101/"><img src="github-logo.png" alt="github" class="social-media-logo github"></a>
+            <a href="https://www.linkedin.com/in/aanuoluwapo-ayodeji-995904261/"><img src="linkedin-logo.png" alt="linkedin" class="social-media-logo"></a>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>#Projects</h2>
+        <div class="project-list">
+            <a href="https://github.com/Aanuoluwa101/clipshare" class="project-link">
+                <div class="project">
+                    <div class="project-image">
+                        <div class="project-image">
+                            <img src="clipshare.png" alt="clipshare">
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Clipshare</h3>
+                        <p class="project-description">Clipshare is a desktop application for sharing clipboard content between two PCs.      
+                                                    Sometime ago, I often found myself copying text between my PC and work desktop using telegram or google keep.
+                                                    So I decided to have some fun making the process seamless. 
+                                                    Now I can copy here and paste there. 
+                                                    </p>
+                        <div class="tech-stack">
+                            <span class="first-tech">Python</span>
+                            <span>Tkinter</span>
+                            <span>Computer Networking</span>
+                        </div>
+                    </div>
+                </div>    
+            </a>
+            
+            <a href="https://soundsophisticated.vercel.app/" class="project-link">
+                <div class="project">
+                    <div class="project-image">
+                        <div class="project-image">
+                            <img src="soundsophisticated.png" alt="soundsophisticated">
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Wordbox</h3>
+                        <p class="project-description">Wordbox is an ai-powered web app that helps
+                            people improve their vocabulary in a fun way. It works by helping
+                            you learn new words in contexts of your choosing. It also has 
+                            a dictionary for more detailed lookup of words
+                        </p>
+                        <div class="tech-stack">
+                            <span class="first-tech">Python</span>
+                            <span>Flask</span>
+                            <span>MongoDB</span>
+                            <span>Redis</span>
+                            <span>Javascript</span>
+                            <span>React</span>
+                            <span id="html-and-css">HTML & CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://akowe.netlify.app/" class="project-link">
+                <div class="project">
+                    <div class="project-image">
+                        <div class="project-image">
+                            <img src="akowe.png" alt="soundsophisticated">
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Akowe</h3>
+                        <p class="project-description">Akowe is roster-generation tool. 
+                            It generates church service monthly roster for Celestial 
+                            churches (a Christian denomination). It was built with the 
+                            aim of making roster preparation a less tedious task. 
+                        </p>
+                        <div class="tech-stack">
+                            <span class="first-tech">Python</span>
+                            <span>Django</span>
+                            <span>PostgreSQL</span>
+                            <span>Javascript</span>
+                            <span>Next.js</span>
+                            <span id="html-and-css">HTML & CSS</span>
+                        </div>
+                    </div>
+            </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>#Contact</h2>
+            <form action="https://formspree.io/f/xoqgglew" method="post">
+                <div class="form-group">
+                    <p>Name</p>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <p>Email</p>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <p>Message</p>
+                    <textarea id="message" name="message" rows="10" required ></textarea>
+                </div>
+                <button type="submit" >Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <section class="closing">
+        <div class="social-media-closing" class="social-media">
+            <a href="https://github.com/Aanuoluwa101/"><img src="github-logo.png" alt="github" class="social-media-logo github"></a>
+            <a href="https://www.linkedin.com/in/aanuoluwapo-ayodeji-995904261/"><img src="linkedin-logo.png" alt="linkedin" class="social-media-logo"></a>
+        </div>
+        <p class="closing-text">Built with HTML and CSS by yours truly - and yeah, I know some 
+            frontend. 
+        </p>
+    </section>
+    <footer>
+        <p class="copyright">© Copyright 2024</p>
+    </footer>
+    
+</body>
+</html>
