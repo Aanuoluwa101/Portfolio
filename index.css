@@ -258,7 +258,7 @@ nav a:hover {
 
 #contact input,
 #contact textarea {
-    width: 70%;
+    width: 80%;
     border-radius: 10px;
     padding: .8rem;
     
@@ -277,6 +277,7 @@ nav a:hover {
 #contact form {
     border-radius: 15px;
     padding: 2rem;
+    padding-top: .1rem;
     background-color: rgba(128, 128, 128, 0.2);
 }
 
@@ -296,12 +297,11 @@ nav a:hover {
 
 .closing {
     display: flex;
-    width: 70%;
+    width: 75%;
     /* border: 2px solid red; */
-    margin: 0 auto;
-    margin-left: 16rem;
+    margin: 2rem auto;
     justify-content: center;
-    align-items: center;
+    /* margin-right: 8rem; */
 }
 
 .social-media-closing,
@@ -313,12 +313,18 @@ nav a:hover {
 }
  
 .closing-text {
-    font-size: .9rem;   
+    font-size: .9rem;
+    margin-left: 0; 
+    padding-left: 2.5rem;  
 }
 
 .social-media-closing {
     border-right: 1px solid #ccd6f6;
-
+    /* display: flex; */
+    text-align: end;
+    margin-right: 0;
+    padding-right: 2.5rem;
+    
 }
 
 
@@ -360,8 +366,8 @@ footer {
 
     .closing {
         flex-direction: column;
-        margin-left: 0;
-        width: 90%;
+        margin: 0 auto;
+        width: 75%;
     }
 
     .social-media-closing,
@@ -371,7 +377,20 @@ footer {
         border-right: none;
         text-align: center;
     }
+
+    .social-media-closing {
+        padding-right: 0;
+    }
+
+    .closing-text{
+        width: 70%;
+        align-self: center;
+        padding-left: 0;
+    }
+    
 }
+
+
 
 @media (max-width: 768px) {
     /* header {
@@ -410,6 +429,16 @@ footer {
 
     .social-media-closing {
         margin: 1rem 0;
+        padding-right: 0;
+    }
+
+    .closing {
+        margin: 0 auto;
+    }
+
+    .closing-text {
+        /* border: 2px solid blue; */
+        padding-left: 0;
     }
 
     .project-image img {
@@ -440,9 +469,9 @@ footer {
         padding: 0;
     }
 
-    #hero {
-        margin-top: 3rem;
-    }
+    /* #hero {
+        margin-top: 1rem;
+    } */
 
     #hero h1 {
         font-size: 24px;
@@ -454,11 +483,22 @@ footer {
 
     .closing {
         width: 100%;
+        margin: 0 auto;
     }
 
     .social-media-closing,
     .closing-text {
         width: 100%;
+    }
+    
+    .closing-text{
+        width: 70%;
+        align-self: center;
+    }
+
+    #contact button {
+        display: block;
+        margin: .5rem auto;
     }
 
     .project-title {
